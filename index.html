@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pappa Loves You!</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap:100px;
+            margin-top: 30px;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            width: 100px;
+        }
+        .yes-button {
+            background-color: green;
+            color: white;
+        }
+        .no-button {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Does my Pappa love me? ❤️</h1>
+
+    <div class="button-container">
+        <button class="yes-button" onclick="alert('Yes! Pappa loves you so much! ❤️')">Yes</button>
+        <button class="no-button" id="noButton">No</button>
+    </div>
+
+    <script>
+        const noButton = document.getElementById("noButton");
+
+        noButton.addEventListener("mouseover", function () {
+            noButton.innerText = "Yes";
+            noButton.style.backgroundColor = "green";
+        });
+
+        noButton.addEventListener("mouseleave", function () {
+            noButton.innerText = "No";
+            noButton.style.backgroundColor = "red";
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
